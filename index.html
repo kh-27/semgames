@@ -15,6 +15,25 @@
       padding: 40px;
       color: white;
       text-align: center;
+      position: relative;
+    }
+
+    /* عکس گوشه بالا راست */
+    .top-right-img {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 120px;      /* ←← اندازه عکس را اینجا تغییر بده */
+      height: auto;
+    }
+
+    /* عکس گوشه بالا چپ */
+    .top-left-img {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 120px;      /* ←← اندازه عکس را اینجا تغییر بده */
+      height: auto;
     }
 
     h1 {
@@ -31,11 +50,12 @@
       padding: 10px;
       box-shadow: 0 0 30px #0ff;
       background: rgba(0, 0, 0, 0.4);
+      margin-top: 60px;
     }
 
     iframe {
       width: 100%;
-      height: 900px;
+      height: 900px;    /* ←← ارتفاع دلخواه شیت */
       border: none;
       border-radius: 10px;
     }
@@ -43,14 +63,17 @@
 </head>
 
 <body>
+
+  <!-- عکس‌ها (تو فقط لینک رو پر کن) -->
+  <img class="top-right-img" src="" alt="top right image">
+  <img class="top-left-img" src="" alt="top left image">
+
   <h1>🏆 جدول امتیازات</h1>
-  <h1>فرهاد </h1>
+  <h1>فرهاد</h1>
+
   <div class="frame-box">
-    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSZ5Jy2IP11lmPEqGglX00SZvC1cXM9TXuR_pVu3qc3tLQrz7TGvBDbQXM0KyRlHHUFYTNdDVz2lqhM/pubhtml?gid=194181825&single=true"></iframe>
+    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSZ5Jy2IP11lmPEqGglX00SZvC1cXM9TXuR_pVu3qc3tLQrz7TGvBDbQXM0KyRlHHUFYTNdDVz2lqhM/pubhtml?gid=194181825&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
   </div>
 
 </body>
 </html>
-
-
-
